@@ -33,6 +33,35 @@ console.log(5^1);
 // arithmetic operator
 
  let value = 2 ** 3;
- console.log(value)
  let valueFrom = Math.pow(2,3);
  console.log(value,valueFrom);
+// traditional way to define arrow function
+ (function (){
+    console.log("anno function")
+ })
+// modern way to define arrow function that return itself(doesn't require to use return keyword)
+const summation = (num1,num2)=> num1 + num2;
+//we need to return explicitily if we enclose function with {}
+const summationTwo = (num1,num2) => {
+   return num1 + num2;
+}
+// console.log(summation(10,10));
+
+const person = {
+   name:"saugat",
+   address : "Morang",
+   phoneNumbre : 9804
+};
+console.log(person)
+let text = "";
+for(let x in person){
+   text +=  person[x]+" " ;
+}
+// console.log(text)
+const myString = JSON.stringify(person)
+// console.log(myString);
+console.log(typeof person, typeof myString)
+
+Object.freeze(person);
+person.name = "prashant";
+console.log(person.name)
