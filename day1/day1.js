@@ -13,6 +13,8 @@ const numberTwo = "15";
 const textArea = numberOne == numberTwo ? "something is turn on true" : "may be it called on false";
 console.log(textArea)
 
+//condition ? true : false;  ternary operator
+
 // JavaScript Type Operators
 //  --> typeof
 const operatorName = [typeof String,typeof Number,typeof Math, typeof new Date()];
